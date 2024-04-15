@@ -12,10 +12,13 @@ export default function TodoItem({ item, todos, setTodos }) {
     setTodos(newArray);
     console.log(todos);
   }
+  const completed = item.done ? styles.completed : "";
   return (
     <div className={styles.item}>
       <div className={styles.itemName}>
-        <span onClick={() => handleClick(item.name)}>{item.name}</span>
+        <span className={completed} onClick={() => handleClick(item.name)}>
+          {item.name}
+        </span>
 
         <span>
           <button

@@ -1,8 +1,7 @@
 .item {
-  width: 500px;
-  color: #353935;
+  color: black;
   font-size: 20px;
-  margin: 0 auto;
+  margin: 0px 0px 0px 10px;
 }
 
 .itemName {
@@ -18,9 +17,15 @@
   float: right;
   padding: 12px 20px;
   border: none;
-  background-color: #f7ca18;
-  color: white;
+  background-color: #000000da;
+  color: rgb(230, 15, 83);
+  font-weight: bold;
   margin-top: -5px;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  text-decoration: line-through;
 }
